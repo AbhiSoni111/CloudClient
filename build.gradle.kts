@@ -9,8 +9,11 @@ repositories {
     google()
 }
 
+
 dependencies {
     implementation(compose.desktop.currentOs)
+    implementation("io.ktor:ktor-client-core:2.2.1")
+    implementation("io.ktor:ktor-client-cio:2.2.1")
 }
 
 compose.desktop {
