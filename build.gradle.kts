@@ -9,11 +9,12 @@ repositories {
     google()
 }
 
+val ktor_Version: String by project
 
 dependencies {
     implementation(compose.desktop.currentOs)
-    implementation("io.ktor:ktor-client-core:2.2.1")
-    implementation("io.ktor:ktor-client-cio:2.2.1")
+    implementation("io.ktor:ktor-client-core:$ktor_Version")
+    implementation("io.ktor:ktor-client-cio:$ktor_Version")
 }
 
 compose.desktop {
